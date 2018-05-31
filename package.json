@@ -1,0 +1,29 @@
+{
+  "name": "reactscraper",
+  "version": "1.0.0",
+  "description": "Mern Demo",
+  "main": "server.js",
+  "scripts": {
+    "server": "node server.js",
+    "client": "cd client && npm run start",
+    "start": "concurrently \"./node_modules/.bin/nodemon\" \"npm run client\"",
+    "build": "cd client && npm run build",
+    "deploy": "yarn build && git add . && git commit -m \"Building for production\" && git push heroku master",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "installDeps": "yarn && cd client && yarn"
+  },
+  "author": "Kevin Murtaugh",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "cheerio-advanced-selectors": "^2.0.1",
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "phantom": "^4.0.12",
+    "request": "^2.87.0"
+  }
+}
