@@ -1,5 +1,9 @@
 node_modules/
 package.json
 package-lock.json
-About/package-lock.json
+package-lock.json
 client/package-lock.json
+
+/* this should be al of them...*/
+/* trick seems now that I need to trick the machine */
+
